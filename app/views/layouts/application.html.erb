@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <div>
+      Welcome to NationalParks.com!
+      <div>
+        <%= link_to "Home", root_path %>
+        <%= link_to "Parks", parks_path %>
+        <%= link_to "States", states_path %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

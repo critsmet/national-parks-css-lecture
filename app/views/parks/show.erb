@@ -1,0 +1,8 @@
+<%= @park.name %>
+<span>Size: <%= @park.size %> sq miles</span>
+<span>Ticket cost: $<%= @park.ticket_cost %> </span>
+<img src="<%= @park.image_url %>"/>
+
+<%= button_to "Edit Park", edit_park_path(@park), action: :edit, method: :get %>
+
+<%= button_to "Delete Park", @park, method: :delete %>

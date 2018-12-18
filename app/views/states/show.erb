@@ -1,0 +1,6 @@
+<%= @state.name %>
+<span>Slogan: <%= @state.slogan %></span>
+<span>Population: <%= @state.population %></span>
+<img src="<%= @state.image_url %>"/>
+
+<%= button_to "Delete State", @state, method: :delete %>

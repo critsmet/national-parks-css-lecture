@@ -1,22 +1,37 @@
 class StatesController < ApplicationController
+  before_action :get_state, only: [:show, :edit, :destroy]
 
     def index
-        @states = State.all 
-        render :index
+      @states = State.all
     end
 
-    def show 
-        @state = State.find(params[:id])
-        render :show
+    def show
     end
 
-    def new 
-        render :new
+    def edit
     end
 
-    def create 
-        @state = State.new(state_params)\
+    def new
+      @state = State.new
     end
 
-    def 
+    def create
+      @state = State.create(state_params)
+      redirect_to state_path
+    end
+
+    def destroy
+      @state.destroy
+      redirect_to states_path
+    end
+
+    private
+
+    def get_state
+      @state = State.find(params[:id])
+    end
+
+    def state_params
+      params.require(:state).permit(:name, :slogan, :population, :image_url)
+    end
 end

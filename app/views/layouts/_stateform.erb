@@ -1,0 +1,15 @@
+<%= form_for @state do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :slogan %>
+  <%= f.text_field :slogan %>
+
+  <%= f.label :population %>
+  <%= f.number_field :population %>
+
+  <%= f.label :image_url, "Image Url" %> 
+  <%= f.text_field :image_url %>
+
+  <%= f.submit %>
+<% end %>
