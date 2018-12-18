@@ -1,8 +1,14 @@
-<% @states.each do |state| %>
-  <div>
-    <img src="<%= state.image_url %>">
-    <%= link_to state.name, state %>
-  </div>
-<% end %>
+<div class="gallery">
+  <% @states.each do |state| %>
+    <div class="card">
+      <div class="image">
+        <img src="<%= state.image_url %>">
+      </div>
+      <div class="name">
+        <%= link_to state.name, state %>
+      </div>
+    </div>
+  <% end %>
+</div>
 
 <%= link_to "Add State", new_state_path %>

@@ -7,16 +7,17 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-      Welcome to NationalParks.com!
-      <div>
-        <%= link_to "Home", root_path %>
-        <%= link_to "Parks", parks_path %>
-        <%= link_to "States", states_path %>
-      </div>
+    <div id="navbar">
+        <span id="header">Welcome to NationalParks.com!</span>
+        <span class="links">
+          <%= link_to "Home", root_path %>
+          <%= link_to "Parks", parks_path %>
+          <%= link_to "States", states_path %>
+        </span>
     </div>
     <%= yield %>
   </body>

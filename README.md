@@ -1,24 +1,10 @@
-# README
+#CSS Lecture
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Goals
+* Discuss what CSS is and why it's important
+* Touch on Design and Wireframing
+* How to render stylesheets
+* Go over basic anatomy of CSS block, style approaches/conventions
+* Practice custom CSS together
+* Touch on margin/padding, flex/grid
+* Dive into framework options
