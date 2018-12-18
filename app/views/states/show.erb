@@ -3,4 +3,6 @@
 <span>Population: <%= @state.population %></span>
 <img src="<%= @state.image_url %>"/>
 
+<%= button_to "Edit State", edit_state_path(@state), action: :edit, method: :get %>
+
 <%= button_to "Delete State", @state, method: :delete %>

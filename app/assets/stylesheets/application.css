@@ -21,6 +21,7 @@ a, span {
 body {
   margin-top: 0px;
   margin-left: 0px;
+  margin-bottom: 0px;
 }
 a:hover {
   color: orange;
@@ -35,6 +36,16 @@ a:hover {
   height: 100vh;
   width: 100vw;
   background-image: url(https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1427&q=80);
+  background-size: cover;
+}
+
+#splash span{
+  font-family: 'Major Mono Display', monospace;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 40px;
 }
 
 #navbar {
@@ -51,15 +62,6 @@ a:hover {
 
 .links a {
   margin: 0px 5px;
-}
-
-#banner-text {
-  font-family: 'Major Mono Display', monospace;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  color: black;
-  font-size: 40px;
 }
 
 .gallery {
